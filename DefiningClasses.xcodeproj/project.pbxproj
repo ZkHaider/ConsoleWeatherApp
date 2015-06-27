@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4B516CC21B3E58F100E83351 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B516CC11B3E58F100E83351 /* main.m */; };
+		4B516CD11B3E5DBA00E83351 /* Weather.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B516CD01B3E5DBA00E83351 /* Weather.m */; };
+		4B516CD41B3E5E4A00E83351 /* Currently.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B516CD31B3E5E4A00E83351 /* Currently.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		4B516CBE1B3E58F100E83351 /* DefiningClasses */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DefiningClasses; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B516CC11B3E58F100E83351 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4B516CCF1B3E5DBA00E83351 /* Weather.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Weather.h; sourceTree = "<group>"; };
+		4B516CD01B3E5DBA00E83351 /* Weather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Weather.m; sourceTree = "<group>"; };
+		4B516CD21B3E5E4A00E83351 /* Currently.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Currently.h; sourceTree = "<group>"; };
+		4B516CD31B3E5E4A00E83351 /* Currently.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Currently.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +63,29 @@
 		4B516CC01B3E58F100E83351 /* DefiningClasses */ = {
 			isa = PBXGroup;
 			children = (
+				4B516CD61B3E600900E83351 /* api */,
+				4B516CD51B3E5FE600E83351 /* models */,
 				4B516CC11B3E58F100E83351 /* main.m */,
 			);
 			path = DefiningClasses;
+			sourceTree = "<group>";
+		};
+		4B516CD51B3E5FE600E83351 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				4B516CCF1B3E5DBA00E83351 /* Weather.h */,
+				4B516CD01B3E5DBA00E83351 /* Weather.m */,
+				4B516CD21B3E5E4A00E83351 /* Currently.h */,
+				4B516CD31B3E5E4A00E83351 /* Currently.m */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+		4B516CD61B3E600900E83351 /* api */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = api;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,6 +144,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B516CD11B3E5DBA00E83351 /* Weather.m in Sources */,
+				4B516CD41B3E5E4A00E83351 /* Currently.m in Sources */,
 				4B516CC21B3E58F100E83351 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

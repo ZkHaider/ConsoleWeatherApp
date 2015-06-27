@@ -7,11 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Player.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        Player *newPlayer = [[Player alloc] init];
+        
+        // Use the class
+        [newPlayer jump];
+        [newPlayer fire];
+        [newPlayer restartLevel:2];
+        
+        [newPlayer setPlayerName:@"Haider Khan"];
+        NSLog(@"Player name is %@", [newPlayer playerName]);
     }
     return 0;
 }
